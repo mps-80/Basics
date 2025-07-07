@@ -7,8 +7,8 @@ This repo contains a minimal PHP web application containerized with Docker.
 1. Make sure Docker is installed.
 2. Clone this repo:
    ```bash
-   git clone https://github.com/your-username/your-php-app.git
-   cd your-php-app
+   git clone https://github.com/mps-80/Basics.git
+   cd Basics
 3. docker-compose up --build
 4. Open in browser: http://localhost:8080
 
