@@ -1,0 +1,13 @@
+# Use the official PHP + Apache image
+FROM php:8.2-apache
+
+# Optional: Enable URL rewriting (if your app uses mod_rewrite)
+RUN a2enmod rewrite
+
+# Copy your PHP files into Apache’s web root
+COPY . /var/www/html/
+
+# Make sure all files are readable by Apache
+RUN chown -R www-data:www-data /var/www/html
+
+EXPOSE 80
